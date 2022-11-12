@@ -1,211 +1,230 @@
-:root{
-    margin: 0%;
-    font-size: 16px;
-    font-family: Verdana;
-    box-sizing: border-box;
-  }
-  
-  @font-face {
-    font-family: "girls";
-    src: url("Girls/Girls.otf");
+:root {
+  margin: 0%;
+  font-size: 16px;
+  font-family: Verdana;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "girls";
+  src: url("Girls/Girls.otf");
 }
 
 body {
-    background-image: url("/img/logo.png");
-    background-repeat: repeat;
-    background-size:12%;
-} 
-  .navbar{
-    margin-bottom: 30px;
-    padding: 7px 0 0 0;
-    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0));
-    font-family: "girls";
-    font-weight: bold;
-    display: flex;
-  }
-  
-  .navbar ul li a{
-    padding: 0 0 0 20px;
-    text-decoration: none;
-    color: rgba(0, 0, 0, 0.566);
-    font-size: large
+  background-image: url("/img/logo.png");
+  background-repeat: repeat;
+  background-size: 12%;
+}
+
+.navbar {
+  margin-bottom: 30px;
+  padding: 7px 0 0 0;
+  background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+  font-family: "girls";
+  font-weight: bold;
+  display: flex;
+}
+
+.navbar ul li a {
+  padding: 0 0 0 20px;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.566);
+  font-size: large
 }
 
 .navbar a:hover {
-    color: rgba(0, 0, 0, 0.566);
-    font-size: x-large
+  color: rgba(0, 0, 0, 0.566);
+  font-size: x-large
 }
 
-  header div{
-    justify-content: center;
-    background-color: var(--main-colour);
+header div {
+  justify-content: center;
+  background-color: var(--main-colour);
+}
+
+header div #fanzine {
+  padding: 0 30% 0 30%;
+  display: block;
+  width: 40%;
+  height: 40%;
+}
+
+header div #logo {
+  padding: 0 0 0 29%;
+  display: block;
+  width: 40%;
+  height: 40%;
+}
+
+.portada .titulo {
+  color: rgb(216, 157, 47);
+  font-size: 2rem;
+  font-weight: bold;
+
+}
+
+.portada .imagen {
+  width: 50vw;
+}
+
+main {
+  display: inline-block;
+  background-color: var(--main-colour);
+  line-height: 20px;
+  display: grid;
+}
+
+main #presentacion {
+  margin-left: 60px;
+  width: 70%;
+  height: 20%;
+  justify-content: center;
+  text-align: center;
+}
+
+main .subtitles {
+  margin: 0 0 15px 20px;
+  padding-bottom: 15px;
+  font-size: 30px;
+  color: rgba(0, 0, 0, 0.702);
+  font-family: "girls";
+  font-weight: bold;
+}
+
+main #skills {
+  margin: 50px 0 50px 30%;
+  width: 70%;
+  height: 20%;
+}
+
+main #form {
+  text-align: center;
+  font-size: larger;
+  font-family: "girls";
+}
+
+#skills .contenedor {
+  overflow: hidden;
+  width: 200px;
+  height: 30px;
+  margin: 5px 5px 5px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.217);
+  border-radius: 15px;
+}
+
+#skills .texto {
+  padding: 4%;
+  text-align: center;
+  color: black;
+  font-size: large;
+  font-family: "girls";
+  width: 16px;
+  height: 100%;
+}
+
+@keyframes drama {
+  from {
+    width: 0%;
+    opacity: 0;
   }
 
-  header div #fanzine{
-    padding: 0 30% 0 30%;
-    display: block;
-    width: 40%;
-    height: 40%;
-  }
-
-  header div #logo{
-    padding: 0 0 0 29%;
-    display: block;
-    width: 40%;
-    height: 40%;
-  }
-
-  .portada .titulo{
-    color: rgb(216, 157, 47);
-    font-size: 2rem;
-    font-weight: bold;
-  
-  }
-  
-  .portada .imagen{
-    width: 50vw;
-  }
-  
-  main{
-    display: inline-block;
-    background-color: var(--main-colour);
-    line-height: 20px;
-    display: grid;
-  }
-  main  #presentacion{
-    margin-left: 60px;
-    width: 70%;
-    height: 20%;
-    justify-content: center;
-    text-align: center;
-  }
-
-  main .subtitles{
-    margin:0 0 15px 20px;
-    padding-bottom: 15px;
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.702);
-    font-family: "girls";
-    font-weight: bold;
-  }
-  
-  main #skills{
-    margin:50px 0 50px 30%;
-    width: 70%;
-    height: 20%;
-  }
-
-  main #form{
-    text-align: center;
-    font-size: larger;
-    font-family: "girls";
-  }
-
-  #skills .contenedor{
-    overflow: hidden;
-    width: 200px;
-    height: 30px;
-    margin: 5px 5px 5px 0px;
-    border: 1px solid rgba(0, 0, 0, 0.217);
-    border-radius: 15px;
-  }
-  #skills .texto{
-    padding: 4%;
-    text-align: center;
-    color: black;
-    font-size: large;
-    font-family: "girls";
-    width: 16px;
-    height: 100%;
-  }
-  @keyframes drama {
-    from{
-      width: 0%;
-      opacity: 0;
-    }
-    to{
-      width: 100%;
-      opacity: 1;
-    }
-  }
-  #skills #drama{
+  to {
     width: 100%;
-    height: 100%;
-    background: #e09589;
-    animation: drama 3s forwards;
+    opacity: 1;
   }
-  @keyframes folcklore {
-    from{
-      width: 0%;
-      opacity: 0;
-    }
-    to{
-      width: 75%;
-      opacity: 1;
-    }
-  }
-  #skills #folcklore{
-    width: 100%;
-    height: 100%;
-    background: #e09589;
-    animation: folcklore 3s forwards;
-  }
-  @keyframes poderio {
-    from{
-      width: 0%;
-      opacity: 0;
-    }
-    to{
-      width: 45%;
-      opacity: 1;
-    }
-  }
-  #skills #poderio{
-    width: 100%;
-    height: 100%;
-    background: #e09589;
-    animation: poderio 3s forwards;
-  }
-  @keyframes piscis {
-    from{
-      width: 0%;
-      opacity: 0;
-    }
-    to{
-      width: 20%;
-      opacity: 1;
-    }
-  }
-  #piscis{
-    background: #e09589;
-    animation: piscis 3s forwards;
-  }
-  @keyframes piscis {
-    from{
-      width: 0%;
-      opacity: 0;
-    }
-    to{
-      width: 100%;
-      opacity: 1;
-    }
-  }
-  main #tellme{
-    margin: 20px;
+}
+
+#skills #drama {
+  width: 100%;
+  height: 100%;
+  background: #e09589;
+  animation: drama 3s forwards;
+}
+
+@keyframes folcklore {
+  from {
+    width: 0%;
+    opacity: 0;
   }
 
-  main #form textarea {
-    margin: 12px 0 10px 7%;
-    text-align: center;
-    width: 400px;
-    height: 150px;
-    display: block;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    border-radius: 25px;
-    text-align: center;
-    border: none;
+  to {
+    width: 75%;
+    opacity: 1;
   }
-main #button{
+}
+
+#skills #folcklore {
+  width: 100%;
+  height: 100%;
+  background: #e09589;
+  animation: folcklore 3s forwards;
+}
+
+@keyframes poderio {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+
+  to {
+    width: 45%;
+    opacity: 1;
+  }
+}
+
+#skills #poderio {
+  width: 100%;
+  height: 100%;
+  background: #e09589;
+  animation: poderio 3s forwards;
+}
+
+@keyframes piscis {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+
+  to {
+    width: 20%;
+    opacity: 1;
+  }
+}
+
+#piscis {
+  background: #e09589;
+  animation: piscis 3s forwards;
+}
+
+@keyframes piscis {
+  from {
+    width: 0%;
+    opacity: 0;
+  }
+
+  to {
+    width: 100%;
+    opacity: 1;
+  }
+}
+
+main #tellme {
+  margin: 20px;
+}
+
+main #form textarea {
+  margin: 12px 0 10px 7%;
+  text-align: center;
+  width: 400px;
+  height: 150px;
+  display: block;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 25px;
+  text-align: center;
+  border: none;
+}
+
+main #button {
   width: 80px;
   height: 70%;
   margin-bottom: 50px;
@@ -217,78 +236,88 @@ main #button{
   text-align: center;
   border: none
 }
-  footer {
-    display: flex;
-    position:fixed;
-    bottom:0px;
-    height:40px;
-    width:100%;
-    justify-content: space-around;
-    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.059), rgb(255, 255, 255));
+
+footer {
+  display: flex;
+  position: fixed;
+  bottom: 0px;
+  height: 40px;
+  width: 100%;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.059), rgb(255, 255, 255));
 
 }
 
 footer ul {
-    display: flex;
+  display: flex;
 }
 
 footer img {
-    width: 35px;
+  width: 35px;
 }
-#youtube{
-    margin: 5px 5px 0 0;
+
+#youtube {
+  margin: 5px 5px 0 0;
 }
-  
-  @media screen and (min-width: 576px) {
-    .navbar {
-      display: flex;
-      justify-content: end;
 
-    }
-    .navbar ul li a{
-      transition: color 0.3s linear;
-    }
-    .navbar ul li a:hover{
-      color: rgba(254, 254, 254, 0.481)
-    }
-    main{
-      display: inline-block;
-      background-color: var(--main-colour);
-      line-height: 20px;
-      display: grid;
-    }
-    main #presentacion{
-      padding: 0 0 40px 15%;
-      margin: 7px;
-    }
- 
-    main #skills{
-      margin:50px 0 50px 43%;
-      width: 70%;
-      height: 20%;
-    }
-    main #form{
-      padding: 7% 0 40px 0;
-    }
-    main #form input{
-      margin: 8px 0 5px 0 ;
-    }
-    main #tellme{
-      margin: 20px;
-    }
+@media screen and (min-width: 576px) {
+  .navbar {
+    display: flex;
+    justify-content: end;
 
-    main #form textarea {
-      margin: 12px 0 10px 37%;
-      text-align: center;
-      width: 400px;
-      height: 150px;
-      display: block;
-      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-      border-radius: 25px;
-      text-align: center;
-      border: none;
-    }
-  main #button{
+  }
+
+  .navbar ul li a {
+    transition: color 0.3s linear;
+  }
+
+  .navbar ul li a:hover {
+    color: rgba(254, 254, 254, 0.481)
+  }
+
+  main {
+    display: inline-block;
+    background-color: var(--main-colour);
+    line-height: 20px;
+    display: grid;
+  }
+
+  main #presentacion {
+    padding: 0 0 40px 15%;
+    margin: 7px;
+  }
+
+  main #skills {
+    margin: 50px 0 50px 43%;
+    width: 70%;
+    height: 20%;
+  }
+
+  main #form {
+    padding: 7% 0 40px 0;
+  }
+
+  main #form input {
+    margin: 8px 0 5px 0;
+  }
+
+  main #tellme {
+    margin: 20px;
+  }
+
+  main #form textarea {
+    margin: 12px 0 10px 37%;
+    text-align: center;
+    width: 400px;
+    height: 150px;
+    display: block;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 25px;
+    text-align: center;
+    border: none;
+  }
+
+  main #button {
     width: 80px;
     height: 70%;
     margin-bottom: 20px;
@@ -301,5 +330,4 @@ footer img {
     text-align: center;
     border: none
   }
-  }
-
+}
