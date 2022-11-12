@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spanish Girls Project</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul class="navbar">
+            <li><a href="#project">Quién soy</a></li>
+            <li><a href="#skills">Mis skills</a></li>
+            <li><a href="#form">Formulario de contacto</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <div>
+            <img id="logo" src="/img/logo1.png" alt="logo">
+            <img id="fanzine" src="/img/pantozine.png" alt="Fanzine Pantoja" title="Fanzine1">
+        </div>
+    </header>
+
+    <main>
+        <section id="presentacion">
+            <h3 class="subtitles">¿Qué es Spanish Girls Fanzine </h3>
+            <p>   Spanish Girls Fanzine nace con la necesidad de plasmar y reivindicar la cultura basura con la
+                que me he
+                criado. Desde Crónicas Marcianas a DEC pasando por el Pop Art (“aunque esté mucho mejor visto
+                socialmente”).<br>La idea principal no es otra que experimentar en el universo fanzine, ya que
+                hasta el
+                momento era simple consumidora,y así dar voz a esta cultura basura repudiada, pero sin embargo
+                tan
+                consumida.<br>
+                Esta serie de 7 fanzines son un reflejo del mundo de las folklóricas españolas. Todo
+                autoeditado, con los medios de los que puedo disponer: papel glossy, una impresora, tinta y
+                mucho tiempo
+                libre. Manteniendo así, en cierto modo la esencia de los primeros fanzines.<br>
+                Isabel Pantoja
+                protagoniza el primero de los cuatro números publicados (por el momento): las anécdotas más
+                conocidas de
+                la tonadillera, stickers que te harán creer que Cantora se ha comido a la Factory o un apartado
+                con los
+                mejores outfits de la que en su día fue la dueña y señora de Marbella. Son algunos de los
+                contenidos de
+                esta primera minienciclopedia autoeditada.<br>
+                Recoge momentos clave de la vida de las folklóricas como
+                si de una revista del corazón se tratara pero con humor y simpatía.<br>
+                Los referentes principales son
+                las revistas adolescentes de principios de los 2000, a las que he añadido toque de los
+                Fotogramas de los
+                70. Estos Fanzines están complementados con diferentes interpretaciones de la obra de Warhol con
+                el
+                folklore español, la cultura trash de interés nacional.
+            </p>
+        </section>
+        <section id="skills">
+            <h3 class="subtitles">Mis skills</h3>
+            <div class="contenedor">
+                <div id="drama">
+                    <div class="texto">Drama</div>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div id="folcklore">
+                    <div class="texto">Folcklore</div>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div id="poderio">
+                    <div class="texto">Poderio</div>
+                </div>
+            </div>
+            <div class="contenedor">
+                <div id="piscis">
+                    <div class="texto">Piscis</div>
+                </div>
+            </div>
+        </section>
+        <section id="form" class="formulario">
+            <h3 class="subtitles"> Formulario de registro </h3>
+            <form action="registro completado.html">
+                <div>
+                    <label for="nombre">Nombre:</label>
+                    <input required id="nombre" name="name" type="text" placeholder="Añade tu nombre">
+                </div>
+                <div>
+                    <label for="apellidos">Apellidos:</label>
+                    <input required id="apellinos" name="surname" type="text" placeholder="Añade tus apellidos">
+                </div>
+                <div>
+                    <label for="telefono">Teléfono:</label>
+                    <input required id="telefono" name="telf" type="tel" placeholder="Añade tu teléfono"
+                        pattern="[0-9]+">
+                </div>
+                <div>
+                    <label for="github">Github username:</label>
+                    <input id="github" name="githubuser" type="text" placeholder="Añade tu @username"
+                        pattern="^@[^\s]+">
+                </div>
+                <div>
+                    <fieldset>
+                        <legend>Como me conociste?</legend>
+                        <div>
+                            <input required type="radio" id="KeepCoding" name="conocimiento" value="KeepCoding">
+                            <label for="KeepCoding">KeepCoding</label>
+                        </div>
+                        <div>
+                            <input required type="radio" id="Universidad" name="conocimiento" value="Universidad">
+                            <label for="Universidad">Universidad</label>
+                        </div>
+                        <div>
+                            <input required type="radio" id="Amigos" name="conocimiento" value="Amigos">
+                            <label for="Amigos">Amigos</label>
+                        </div>
+                        <div>
+                            <input required type="radio" id="Redes" name="conocimiento" value="Redes">
+                            <label for="Redes">Redes Sociales</label>
+                        </div>
+                    </fieldset>
+                </div>
+                <div>
+                    <label for="masinfoo">Cuéntame algo más de ti:</label>
+                    <textarea required id="masinfo" name="descrip"
+                        placeholder="Escribe aqui (max. 180 caractéres)" maxlength="180"></textarea>
+                </div>
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+          <ul>
+            <a id="youtube" href="https://www.youtube.com/channel/UChAFebpzVKCO0-IrCo_XdWw"><img src="img/youtube.png"
+                alt="youtube"></a>
+    
+            <a href="https://www.instagram.com/spanishgfanzine/"><img src="img/instagram.png" alt="Instagram"></a>
+          </ul>
+        </div>
+      </footer>
+</body>
+
+</html>

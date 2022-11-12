@@ -1,0 +1,239 @@
+:root{
+    margin: 0%;
+    font-size: 16px;
+    font-family: Verdana;
+    box-sizing: border-box;
+  }
+  
+  @font-face {
+    font-family: "girls";
+    src: url("Girls/Girls.otf");
+}
+
+body {
+    background-image: url("/img/logo.png");
+    background-repeat: repeat;
+    background-size:12%;
+} 
+  .navbar{
+    padding: 7px 0 0 0;
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(255, 255, 255, 0));
+    font-family: "girls";
+    font-weight: bold;
+    display: flex;
+  }
+  
+  .navbar ul li a{
+    padding: 0 0 0 20px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.566);
+    font-size: large
+}
+
+.navbar a:hover {
+    color: rgba(0, 0, 0, 0.566);
+    font-size: x-large
+}
+
+  header div{
+    justify-content: center;
+    background-color: var(--main-colour);
+  }
+
+  header div #fanzine{
+    padding: 0 30% 0 30%;
+    display: block;
+    width: 40%;
+    height: 40%;
+  }
+
+  header div #logo{
+    padding: 0 0 0 38%;
+    display: block;
+    width: 20%;
+    height: 20%;
+  }
+
+  .portada .titulo{
+    color: rgb(216, 157, 47);
+    font-size: 2rem;
+    font-weight: bold;
+  
+  }
+  
+  .portada .imagen{
+    width: 50vw;
+  }
+  
+  main{
+    display: inline-block;
+    background-color: var(--main-colour);
+    line-height: 20px;
+    display: grid;
+  }
+  main  #presentacion{
+    margin-left: 60px;
+    width: 70%;
+    height: 20%;
+    justify-content: center;
+    text-align: center;
+  }
+
+  main .subtitles{
+    margin:0 0 15px 20px;
+    padding-bottom: 15px;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.702);
+    font-family: "girls";
+    font-weight: bold;
+  }
+  
+  main #skills{
+    display: block;
+  padding-right: 150px;
+  }
+
+  main .formulario{
+    grid-column: 1 / 3;
+    margin: 5px
+  }
+  #skills .contenedor{
+    overflow: hidden;
+    width: 200px;
+    height: 30px;
+    margin: 5px 5px 5px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.217);
+    border-radius: 15px;
+  }
+  #skills .texto{
+    padding: 4%;
+    text-align: center;
+    color: black;
+    font-size: large;
+    font-family: "girls";
+    width: 16px;
+    height: 100%;
+  }
+  @keyframes drama {
+    from{
+      width: 0%;
+      opacity: 0;
+    }
+    to{
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  #skills #drama{
+    width: 100%;
+    height: 100%;
+    background: #e09589;
+    animation: drama 3s forwards;
+  }
+  @keyframes folcklore {
+    from{
+      width: 0%;
+      opacity: 0;
+    }
+    to{
+      width: 75%;
+      opacity: 1;
+    }
+  }
+  #skills #folcklore{
+    width: 100%;
+    height: 100%;
+    background: #e09589;
+    animation: folcklore 3s forwards;
+  }
+  @keyframes poderio {
+    from{
+      width: 0%;
+      opacity: 0;
+    }
+    to{
+      width: 45%;
+      opacity: 1;
+    }
+  }
+  #skills #poderio{
+    width: 100%;
+    height: 100%;
+    background: #e09589;
+    animation: poderio 3s forwards;
+  }
+  @keyframes piscis {
+    from{
+      width: 0%;
+      opacity: 0;
+    }
+    to{
+      width: 20%;
+      opacity: 1;
+    }
+  }
+  #piscis{
+    background: #e09589;
+    animation: piscis 3s forwards;
+  }
+  @keyframes piscis {
+    from{
+      width: 0%;
+      opacity: 0;
+    }
+    to{
+      width: 100%;
+      opacity: 1;
+    }
+  }
+  .skills .barra-lamer{
+    width: 100%;
+    height: 100%;
+    background: #e09589;
+    animation: lamer 3s forwards;
+  }
+  
+  footer {
+    display: flex;
+    position:fixed;
+    bottom:0px;
+    height:40px;
+    width:100%;
+    justify-content: space-around;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.059), rgb(255, 255, 255));
+
+}
+
+footer ul {
+    display: flex;
+}
+
+footer img {
+    width: 35px;
+}
+#youtube{
+    margin: 5px 5px 0 0;
+}
+  
+  @media screen and (min-width: 576px) {
+    .navbar .menu {
+      display: flex;
+      justify-content: end;
+    }
+    .navbar .menu .link{
+      transition: color 0.3s linear;
+    }
+    .navbar .menu .link:hover{
+      color: rgb(143, 132, 132)
+    }
+    .main-content{
+      display: inline-block;
+      background-color: beige;
+      line-height: 20px;
+      
+    }
+    .main-content .presentacion, .skills, .formulario{
+      margin: 5px;
+    }
+  }
+
