@@ -13,8 +13,8 @@
 <body>
     <nav class="navbar">
         <ul class="navbar">
-            <li><a href="#project">Quién soy</a></li>
-            <li><a href="#skills">Mis skills</a></li>
+            <li><a href="#project">Qué es?</a></li>
+            <li id="skill"><a href="#skills">Mis skills</a></li>
             <li><a href="#form">Formulario de contacto</a></li>
         </ul>
     </nav>
@@ -29,7 +29,7 @@
     <main>
         <section id="presentacion">
             <h3 class="subtitles">¿Qué es Spanish Girls Fanzine </h3>
-            <p>   Spanish Girls Fanzine nace con la necesidad de plasmar y reivindicar la cultura basura con la
+            <p> Spanish Girls Fanzine nace con la necesidad de plasmar y reivindicar la cultura basura con la
                 que me he
                 criado. Desde Crónicas Marcianas a DEC pasando por el Pop Art (“aunque esté mucho mejor visto
                 socialmente”).<br>La idea principal no es otra que experimentar en el universo fanzine, ya que
@@ -82,31 +82,32 @@
                 </div>
             </div>
         </section>
-        <section id="form" class="formulario">
+        <section id="form">
             <h3 class="subtitles"> Formulario de registro </h3>
             <form action="registro completado.html">
-                <div>
-                    <label for="nombre">Nombre:</label>
-                    <input required id="nombre" name="name" type="text" placeholder="Añade tu nombre">
+                <div id="user">
+                    <div>
+                        <label for="nombre">Nombre:</label>
+                        <input required id="nombre" name="name" type="text" placeholder="Añade tu nombre">
+                    </div>
+                    <div>
+                        <label for="apellidos">Apellidos:</label>
+                        <input required id="apellinos" name="surname" type="text" placeholder="Añade tus apellidos">
+                    </div>
+                    <div>
+                        <label for="telefono">Teléfono:</label>
+                        <input required id="telefono" name="telf" type="tel" placeholder="Añade tu teléfono"
+                            pattern="[0-9]+">
+                    </div>
+                    <div>
+                        <label for="github">Github username:</label>
+                        <input id="github" name="githubuser" type="text" placeholder="Añade tu @username"
+                            pattern="^@[^\s]+">
+                    </div>
                 </div>
                 <div>
-                    <label for="apellidos">Apellidos:</label>
-                    <input required id="apellinos" name="surname" type="text" placeholder="Añade tus apellidos">
-                </div>
-                <div>
-                    <label for="telefono">Teléfono:</label>
-                    <input required id="telefono" name="telf" type="tel" placeholder="Añade tu teléfono"
-                        pattern="[0-9]+">
-                </div>
-                <div>
-                    <label for="github">Github username:</label>
-                    <input id="github" name="githubuser" type="text" placeholder="Añade tu @username"
-                        pattern="^@[^\s]+">
-                </div>
-                <div>
-                    <fieldset>
-                        <legend>Como me conociste?</legend>
-                        <div>
+                    <div>
+                        <div id="chose">
                             <input required type="radio" id="KeepCoding" name="conocimiento" value="KeepCoding">
                             <label for="KeepCoding">KeepCoding</label>
                         </div>
@@ -122,27 +123,27 @@
                             <input required type="radio" id="Redes" name="conocimiento" value="Redes">
                             <label for="Redes">Redes Sociales</label>
                         </div>
-                    </fieldset>
+                    </div>
                 </div>
-                <div>
-                    <label for="masinfoo">Cuéntame algo más de ti:</label>
-                    <textarea required id="masinfo" name="descrip"
-                        placeholder="Escribe aqui (max. 180 caractéres)" maxlength="180"></textarea>
+                <div id="tellme">
+                    <label for="inf">Cuéntame algo más de ti:</label>
+                    <textarea required id="info" name="description" placeholder="Escribe aqui (max. 180 caractéres)"
+                        maxlength="180"></textarea>
                 </div>
-                <input type="submit" value="Enviar">
+                <input id="button" type="submit" value="Enviar">
             </form>
         </section>
     </main>
     <footer>
         <div>
-          <ul>
-            <a id="youtube" href="https://www.youtube.com/channel/UChAFebpzVKCO0-IrCo_XdWw"><img src="img/youtube.png"
-                alt="youtube"></a>
-    
-            <a href="https://www.instagram.com/spanishgfanzine/"><img src="img/instagram.png" alt="Instagram"></a>
-          </ul>
+            <ul>
+                <a id="youtube" href="https://www.youtube.com/channel/UChAFebpzVKCO0-IrCo_XdWw"><img
+                        src="img/youtube.png" alt="youtube"></a>
+
+                <a href="https://www.instagram.com/spanishgfanzine/"><img src="img/instagram.png" alt="Instagram"></a>
+            </ul>
         </div>
-      </footer>
+    </footer>
 </body>
 
 </html>
